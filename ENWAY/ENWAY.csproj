@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69D7ADE4-F9F9-4E7D-B7B1-CF205EC60BE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ENWAY</RootNamespace>
+    <AssemblyName>ENWAY</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formlar\AdminChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\AdminChangePassword.Designer.cs">
+      <DependentUpon>AdminChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\CashDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\CashDetails.Designer.cs">
+      <DependentUpon>CashDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Casa.cs" />
+    <Compile Include="Class\Announcement.cs" />
+    <Compile Include="Class\Bag.cs" />
+    <Compile Include="Formlar\ForgotPasswordEnterEmial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\ForgotPasswordEnterEmial.Designer.cs">
+      <DependentUpon>ForgotPasswordEnterEmial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Add_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Add_Products.Designer.cs">
+      <DependentUpon>Add_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person Class\Customer.cs" />
+    <Compile Include="Formlar\Customeradd_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Customeradd_screen.Designer.cs">
+      <DependentUpon>Customeradd_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Artisanadd_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Artisanadd_screen.Designer.cs">
+      <DependentUpon>Artisanadd_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person Class\Artisan.cs" />
+    <Compile Include="Formlar\Enway.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Enway.Designer.cs">
+      <DependentUpon>Enway.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person Class\Admin.cs" />
+    <Compile Include="Class\DataAccess.cs" />
+    <Compile Include="Formlar\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person Class\Person.cs" />
+    <Compile Include="Class\Product.cs" />
+    <Compile Include="Formlar\ProductsDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\ProductsDetails.Designer.cs">
+      <DependentUpon>ProductsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Formlar\Register_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Register_Screen.Designer.cs">
+      <DependentUpon>Register_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person Class\Supplier.cs" />
+    <Compile Include="Formlar\Suppliersadd_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suppliersadd_screen.Designer.cs">
+      <DependentUpon>Suppliersadd_screen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formlar\AdminChangePassword.resx">
+      <DependentUpon>AdminChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\CashDetails.resx">
+      <DependentUpon>CashDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\ForgotPasswordEnterEmial.resx">
+      <DependentUpon>ForgotPasswordEnterEmial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Add_Products.resx">
+      <DependentUpon>Add_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Customeradd_screen.resx">
+      <DependentUpon>Customeradd_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Artisanadd_screen.resx">
+      <DependentUpon>Artisanadd_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Enway.resx">
+      <DependentUpon>Enway.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\ProductsDetails.resx">
+      <DependentUpon>ProductsDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Formlar\Register_Screen.resx">
+      <DependentUpon>Register_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suppliersadd_screen.resx">
+      <DependentUpon>Suppliersadd_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences-desktop-user-password-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alphabet-letter-E-Logo-by-DEEMKA-STUDIO-580x348.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plasma-search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-back-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-reload-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\myadvert.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

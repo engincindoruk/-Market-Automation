@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EnwayModelStoreContainer" CdmEntityContainer="EnwayEntities">
+    <EntitySetMapping Name="Tbl_Products">
+      <EntityTypeMapping TypeName="EnwayModel.Tbl_Products">
+        <MappingFragment StoreEntitySet="Tbl_Products">
+          <ScalarProperty Name="Productid" ColumnName="Productid" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="ProductCategorieid" ColumnName="ProductCategorieid" />
+          <ScalarProperty Name="ProductBrandid" ColumnName="ProductBrandid" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCount" ColumnName="ProductCount" />
+          <ScalarProperty Name="BuyPrice" ColumnName="BuyPrice" />
+          <ScalarProperty Name="Supplierid" ColumnName="Supplierid" />
+          <ScalarProperty Name="SalePriceC" ColumnName="SalePriceC" />
+          <ScalarProperty Name="SalePriceA" ColumnName="SalePriceA" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
